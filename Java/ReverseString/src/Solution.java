@@ -17,7 +17,8 @@ public class Solution {
 	}
 	
 	public static String ReverseString(String s) {
-		if(s==null||s.length()==0) return s;
+		if(s==null||s.length()==0) 
+			return s;
 		String[] ss = s.split(" +");
 		StringBuilder ret = new StringBuilder();
 		for(int i=ss.length-1; i>=0; i--) {
