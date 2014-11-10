@@ -14,14 +14,18 @@ public class Solution {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] A = {1,2,3,4,5,2,3,4,5,1,8};
-		System.out.println(singleNumber(A));
-		System.out.println(singleNumberFail(A));
+		int[] A = {-1,1,2,3,4,5,2,3,4,5,1,8,8};
+		int[] B = {-1};
+		System.out.println(singleNumber(B));
+		System.out.println(singleNumberFail(B));
 	}
 	
 	public static int singleNumber(int[] A) {
-		
-		return 0;
+		int s = 0;
+		for(int a : A){
+			s = s ^ a;
+		}
+		return s;
 	}
 	
 	public static int singleNumberFail(int[] A) {
