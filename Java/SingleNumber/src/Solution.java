@@ -14,9 +14,9 @@ public class Solution {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] A = {-1,1,2,3,4,5,2,3,4,5,1,8,8};
+		int[] A = {-1,0,-1,1,2,3,4,5,2,3,4,5,1,8,8};
 		int[] B = {-1};
-		System.out.println(singleNumber(B));
+		System.out.println(singleNumber(A));
 		System.out.println(singleNumberFail(B));
 	}
 	
